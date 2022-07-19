@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+	color: white;
+}
+
+body{
+	height: 100%;
+	background: url(../img/osen-les-derevia-5.jpeg);
+}
+
+.wrapper{
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+
+.container {
+	background: rgb(0 0 0 / 52%);;
+	width: 800px;
+	padding: 30px 34px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 1px 9px 20px 4px #000000, 3px -4px 20px 5px #000000;
+  }
+  
+.search_container{
+	display: grid;
+	grid-template-columns: 1fr 9fr 1fr;
+	gap: 10px;
+	.form-control {
+		position: relative;
+		margin: 35px 0 20px;
+	  }
+	.form-control input {
+		background-color: transparent;
+		border: 0;
+		border-bottom: 2px #fff solid;
+		display: block;
+		width: 100%;
+		padding: 3px 0px 5px;
+		font-size: 25px;
+		color: #fff;
+	  }
+	  
+	  .form-control input:focus,
+	  .form-control input:valid {
+		outline: 0;
+		border-bottom-color: lightblue;
+	  }
+	  
+	  .form-control label {
+		position: absolute;
+		top: -4px;
+		left: 0;
+		pointer-events: none;
+	  }
+	  
+	  .form-control label span {
+		display: inline-block;
+		font-size: 30px;
+		min-width: 5px;
+		color: #fff;
+		transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	  }
+	  
+	  .form-control input:focus+label span,
+	  .form-control input:valid+label span {
+		color: lightblue;
+		transform: translateY(-30px);
+	  }
+
+	button{
+		outline: none;
+		border: none;
+		background: transparent;
+		color: white;
+		font-size: 30px;
+		cursor: pointer;
+		svg{
+			fill: white;
+		}
+	}
+}
+
+#result{
+	position: relative;
+	text-align: left;
+	h2{
+		font-size: 60px;
+		
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 10px 0 0 0;
+	}
+
+	.weather{
+		margin-left: 10px;
+		margin-bottom: 20px;
+		font-size: 30px;
+	}
+	.weather__temp{
+		top: 35px;
+		right: 80px;
+		position: absolute;
+		img{
+			width: 250px;
+			height: 250px;
+		}
+		h1{
+			font-size: 60px;
+			position: absolute;
+			bottom: 5px;
+			left: 53px;
+		}
+	}
+	.result_container_temp{
+		padding: 10px 0;
+		display: flex;
+		gap: 10px;
+		font-size: 35px;
+		text-align: center;
+		div:first-child{
+			padding-right: 6px;
+			border-right: 1px solid white;
+		}
+	}
+	.result_container_speed{
+		padding: 10px 0;
+		font-size: 25px;
+	}
+
+	.not_found{
+		font-size: 40px;
+		text-align: center;
+		padding: 40px;
+	}
+}

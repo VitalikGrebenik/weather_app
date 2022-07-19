@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: white;
+}
+
+body {
+  height: 100%;
+  background: url(../img/osen-les-derevia-5.jpeg);
+}
+
+.wrapper {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.52);
+  width: 800px;
+  padding: 30px 34px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 9px 20px 4px #000000, 3px -4px 20px 5px #000000;
+}
+
+.search_container {
+  display: grid;
+  grid-template-columns: 1fr 9fr 1fr;
+  gap: 10px;
+}
+.search_container .form-control {
+  position: relative;
+  margin: 35px 0 20px;
+}
+.search_container .form-control input {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 2px #fff solid;
+  display: block;
+  width: 100%;
+  padding: 3px 0px 5px;
+  font-size: 25px;
+  color: #fff;
+}
+.search_container .form-control input:focus,
+.search_container .form-control input:valid {
+  outline: 0;
+  border-bottom-color: lightblue;
+}
+.search_container .form-control label {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  pointer-events: none;
+}
+.search_container .form-control label span {
+  display: inline-block;
+  font-size: 30px;
+  min-width: 5px;
+  color: #fff;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search_container .form-control input:focus + label span,
+.search_container .form-control input:valid + label span {
+  color: lightblue;
+  transform: translateY(-30px);
+}
+.search_container button {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+.search_container button svg {
+  fill: white;
+}
+
+#result {
+  position: relative;
+  text-align: left;
+}
+#result h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;
+}
+#result .weather {
+  margin-left: 10px;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+#result .weather__temp {
+  top: 35px;
+  right: 80px;
+  position: absolute;
+}
+#result .weather__temp img {
+  width: 250px;
+  height: 250px;
+}
+#result .weather__temp h1 {
+  font-size: 60px;
+  position: absolute;
+  bottom: 5px;
+  left: 53px;
+}
+#result .result_container_temp {
+  padding: 10px 0;
+  display: flex;
+  gap: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+#result .result_container_temp div:first-child {
+  padding-right: 6px;
+  border-right: 1px solid white;
+}
+#result .result_container_speed {
+  padding: 10px 0;
+  font-size: 25px;
+}
+#result .not_found {
+  font-size: 40px;
+  text-align: center;
+  padding: 40px;
+}/*# sourceMappingURL=style.css.map */
